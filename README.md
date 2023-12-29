@@ -41,7 +41,7 @@ MeshGenerator generator = GetComponent<MeshGenerator>();
 
 | Properties          | Type                | Description                        |
 |:--------            | :--------           | :------------------------------    |
-|`FlipNormals`        | bool                | Choose wether to flip the normals or not |
+|`FlipNormals`        | `bool`                | Choose wether to flip the normals or not |
 
 #### 📖 Examples
 
@@ -66,13 +66,13 @@ FreeConeMeshGenerator generator = GetComponent<FreeConeMeshGenerator>();
 |:--------                          | :------------------------------    |
 |`EditVerticesByEquation(float x)`  | Edit the vertices by math equation with y = f(x). It change the elements of HeightList |
 
-| Properties         | Type             | Description                        |
-|:--------           | :--------        | :------------------------------    |
-|`StartHeight`       | float            | The left border of the x of the function |
-|`EndHeight`         | float            | The right border of the x of the function |
-|`Sides`             | float            | Amount of sides. Also used as resolution of the mesh |
-|`Angles`            | float            | Angle of the mesh |
-|`HeightList`        | List<HeightData> | List of height and radius of the vertices. Can be edited manually or edited by EditVerticesByEquation(float x) |
+| Properties         | Type               | Description                        |
+|:--------           | :--------          | :------------------------------    |
+|`StartHeight`       | `float`            | The left border of the x of the function |
+|`EndHeight`         | `float`            | The right border of the x of the function |
+|`Sides`             | `float`            | Amount of sides. Also used as resolution of the mesh |
+|`Angles`            | `float`            | Angle of the mesh |
+|`HeightList`        | `List<HeightData>` | List of height and radius of the vertices. Can be edited manually or edited by EditVerticesByEquation(float x) |
 
 #### 📖 Examples
 
