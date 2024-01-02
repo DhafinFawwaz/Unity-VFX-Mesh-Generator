@@ -7,6 +7,7 @@ Useful 3D mesh generator for Visual Effect. It has controllable properties that 
 - Auto update mesh on editor
 - Flip normals
 - Save mesh
+- Bonus utilites for debugging like debug texture
 
 ## 💻 Generators
 - Hollow Circle
@@ -78,7 +79,7 @@ FreeConeMeshGenerator generator = GetComponent<FreeConeMeshGenerator>();
 
 Change the vertices into y = sqrt(x) with x from 0 to 10 which is parabole (inverse of y = x^2).
 ```csharp
-RoundedConeMeshGenerator generator = GetComponent<RoundedConeMeshGenerator>();
+FreeConeMeshGenerator generator = GetComponent<FreeConeMeshGenerator>();
 generator.StartHeight = 0;
 generator.StartHeight = 10;
 generator.EditVerticesByEquation(x => Mathf.Pow(x, 0.5f));
